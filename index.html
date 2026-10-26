@@ -90,8 +90,8 @@
             position: absolute;
             inset: 0;
             background:
-                linear-gradient(135deg, rgba(10,14,26,0.97) 0%, rgba(10,14,26,0.85) 50%, rgba(10,14,26,0.95) 100%),
-                url('https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=1600&q=80') center/cover no-repeat;
+                linear-gradient(135deg, rgba(10,14,26,0.96) 0%, rgba(10,14,26,0.82) 50%, rgba(10,14,26,0.96) 100%),
+                url('https://images.pexels.com/photos/1427541/pexels-photo-1427541.jpeg?w=1600&q=80') center/cover no-repeat;
             z-index: 0;
         }
 
@@ -272,8 +272,8 @@
             overflow: hidden;
             min-height: 320px;
             background:
-                linear-gradient(to right, transparent 60%, var(--dark2) 100%),
-                url('https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&q=80') center/cover no-repeat;
+                linear-gradient(to right, rgba(0,0,0,0.25) 0%, var(--dark2) 100%),
+                url('https://images.pexels.com/photos/12831179/pexels-photo-12831179.jpeg?w=800&q=80') center/cover no-repeat;
         }
 
         .problem-content {
@@ -376,7 +376,9 @@
 
         /* CHEMISTRY */
         #chemistry {
-            background: var(--dark3);
+            background:
+                linear-gradient(rgba(10,14,26,0.88) 0%, rgba(26,34,54,0.92) 100%),
+                url('https://images.pexels.com/photos/25626509/pexels-photo-25626509.jpeg?w=1600&q=80') center/cover no-repeat;
             max-width: 100%;
             border-top: 1px solid var(--border);
             border-bottom: 1px solid var(--border);
@@ -559,6 +561,69 @@
         .val-card h4 { font-size: 0.9em; font-weight: 700; color: white; margin-bottom: 4px; }
 
         .val-card p { font-size: 0.8em; color: var(--muted); line-height: 1.5; }
+
+        /* TOW INDUSTRY */
+        #tow-industry {
+            position: relative;
+            max-width: 100%;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            overflow: hidden;
+            min-height: 420px;
+            display: flex;
+            align-items: center;
+        }
+
+        .tow-bg {
+            position: absolute;
+            inset: 0;
+            background:
+                linear-gradient(90deg, rgba(10,14,26,0.95) 0%, rgba(10,14,26,0.75) 60%, rgba(10,14,26,0.92) 100%),
+                url('https://images.unsplash.com/photo-1582656975914-32db7b0b9df8?w=1600&q=80') center/cover no-repeat;
+            z-index: 0;
+        }
+
+        .tow-content {
+            position: relative;
+            z-index: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 40px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            width: 100%;
+        }
+
+        .tow-features {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 28px;
+        }
+
+        .tow-feature {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+        }
+
+        .tow-feature-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(255,77,28,0.12);
+            border: 1px solid rgba(255,77,28,0.25);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1em;
+            flex-shrink: 0;
+        }
+
+        .tow-feature h4 { font-size: 0.95em; font-weight: 700; color: white; margin-bottom: 4px; }
+        .tow-feature p { font-size: 0.85em; color: var(--muted); line-height: 1.5; }
 
         /* CONTACT */
         #contact-section {
@@ -924,7 +989,7 @@
 <hr class="divider">
 
 <!-- VALIDATION -->
-<div id="validation" style="background: var(--dark2);">
+<div id="validation" style="background: linear-gradient(rgba(17,24,39,0.93) 0%, rgba(17,24,39,0.93) 100%), url('https://images.unsplash.com/photo-1542744094-3a31f272c490?w=1600&q=80') center/cover no-repeat;">
     <section>
         <div class="section-label">Validation & Authority</div>
         <h2 class="section-title">Federal Agencies Confirm the Problem. EVault Solves It.</h2>
@@ -975,6 +1040,50 @@
             </div>
         </div>
     </section>
+</div>
+
+<hr class="divider">
+
+<!-- TOW INDUSTRY -->
+<div id="tow-industry">
+    <div class="tow-bg"></div>
+    <div class="tow-content">
+        <div>
+            <div class="section-label">Built for the Tow & Recovery Industry</div>
+            <h2 class="section-title" style="font-size: 2.2em;">Your Fleet Already Has What It Needs.</h2>
+            <p style="color: var(--muted); font-size: 1em; line-height: 1.7; margin-top: 16px;">EVault integrates directly with hook-lift roll-off trucks already operating in every tow and recovery fleet. No new vehicles, no new equipment purchases — just a container that turns an existing truck into a complete EV fire response unit.</p>
+        </div>
+        <div class="tow-features">
+            <div class="tow-feature">
+                <div class="tow-feature-icon">🪝</div>
+                <div>
+                    <h4>Hook-Lift Compatible</h4>
+                    <p>Designed for standard hook-lift trucks rated 16,000–18,000 lbs. If you run roll-off, you can run EVault.</p>
+                </div>
+            </div>
+            <div class="tow-feature">
+                <div class="tow-feature-icon">⚡</div>
+                <div>
+                    <h4>Eliminates Reignition Risk in Transit</h4>
+                    <p>The Sacramento FD incident — where a vehicle reignited on the flatbed — is exactly what EVault prevents. Vehicle stays submerged from scene to storage facility.</p>
+                </div>
+            </div>
+            <div class="tow-feature">
+                <div class="tow-feature-icon">📋</div>
+                <div>
+                    <h4>Protects Your Business</h4>
+                    <p>EV fire liability is shifting to tow operators. EVault provides a documented, defensible response — reducing exposure and insurance risk.</p>
+                </div>
+            </div>
+            <div class="tow-feature">
+                <div class="tow-feature-icon">🤝</div>
+                <div>
+                    <h4>Pilot Program Available</h4>
+                    <p>We're actively seeking tow and salvage partners in Southern California for our Phase I validation study. Contact us to discuss partnership terms.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <hr class="divider">
